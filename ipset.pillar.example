@@ -1,0 +1,14 @@
+ipset:
+  # key name == set name
+  my_nets:
+    # Other keys:
+    # 'range' key is required for example if 'set_type' == `bitmap:ip`
+    # 'require' contains required ipset name list
+    set_type: hash:net
+    entries:
+      - 127.0.0.0/29
+  my_nets2:
+    set_type: hash:ip
+    entries:
+      - 127.0.0.2
+

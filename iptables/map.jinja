@@ -8,7 +8,7 @@
         'v4': {
             'enabled': true,
             'persistent_config': '/etc/sysconfig/iptables',
-            'pkgs': [' iptables' ],
+            'pkgs': ['iptables' ],
             'service': 'iptables',
             'modules': [],
         },
@@ -71,9 +71,23 @@
                     'FORWARD': {},
                 },
             },
+            'nat': {
+                'chains': {
+                    'INPUT': {},
+                    'OUTPUT': {},
+                    'FORWARD': {},
+                },
+            },
         },
         'v6': {
             'filter': {
+                'chains': {
+                    'INPUT': {},
+                    'OUTPUT': {},
+                    'FORWARD': {},
+                },
+            },
+            'nat': {
                 'chains': {
                     'INPUT': {},
                     'OUTPUT': {},

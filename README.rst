@@ -16,6 +16,17 @@ has been added in runtime would be removed.
 In order to ensure architecture, proper epoch value should be specified.
 Refer to an example.
 
+New version
+==============
+
+.. code-block:: yaml
+
+    parameters:
+      iptables:
+        schema:
+          epoch: 2
+
+
 Sample pillars
 ==============
 
